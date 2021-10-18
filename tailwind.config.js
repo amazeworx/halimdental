@@ -2,10 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: {
-    content: './pages/**/*.{js,ts,jsx,tsx}',
+    content: ['./pages/**/*.{js,ts,jsx,tsx}'],
     safelist: [
-      'bg-blue-500',
-      'text-center',
       'relative',
       'justify-between',
       'h-16'
