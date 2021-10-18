@@ -84,6 +84,7 @@ const Navbar = () => {
           <Disclosure.Panel className="lg:hidden border-t border-b border-gray-200 py-4">
             <div className="px-4 pt-2 pb-2">
               <ul className="text-center">
+                <li className="py-3"><Link href="/"><a className={`navbar-link block text-lg uppercase hover:text-brand ${router.pathname == '/' ? 'active' : ''}`}>Home</a></Link></li>
                 <li className="py-3"><Link href="/about-us"><a className={`navbar-link block text-lg uppercase hover:text-brand ${router.pathname == '/about-us' ? 'active' : ''}`}>About Us</a></Link></li>
                 <li className="relative has-submenu py-3"><span className={`navbar-link inline-block text-lg uppercase`}>Credentials</span>
                   <ul className="submenu pt-1">
