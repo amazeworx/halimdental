@@ -15,7 +15,7 @@ export default function Home() {
             <div className="hidden lg:block"><img className="ml-auto" src="/images/about-02.jpg" /></div>
           </div>
           <div className="w-full lg:w-1/2">
-            <div className="px-4 py-4 text-sm lg:mb-8 lg:px-0 lg:py-0">
+            <div className="px-4 py-4 text-sm text-justify lg:mb-8 lg:px-0 lg:py-0">
               <div className="mb-8">
                 <h2 className="font-bold mb-2">YOUR SMILE IS OUR REWARD</h2>
                 <p>Halim Dental offer comprehensive dental care that will help transform your appearance and maintain your oral health. We pride ourselves on being a unique full service general and cosmetic dentistry boutique. Our team are dedicated to provide the best health care services in dentistry for your family and friends. The office is equipped with innovative technologies and state-of-the-art equipment to provide the best and comfortable dental care for our patient.</p>

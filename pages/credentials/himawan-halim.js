@@ -14,7 +14,7 @@ export default function Home() {
             <div className="mb-1"><img className="md:h-96 md:w-full md:object-cover lg:w-auto lg:h-auto lg:object-none" src="/images/creds-01.jpg" /></div>
           </div>
           <div className="w-full px-4 py-4 lg:w-1/2 lg:py-0 lg:pl-0 lg:pr-8">
-            <div className="mb-8 text-sm">
+            <div className="mb-8 text-sm text-justify">
               <div className="float-left mr-4 mb-4">
                 <div className="border border-gray-300"><img src="/images/himawan-halim.jpg" width="100" height="105" /></div>
               </div>

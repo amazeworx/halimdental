@@ -6,7 +6,21 @@ const Layout = ({ children }) => {
     <div className="page">
       <Head>
         <link rel="icon" href="/favicon.png" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-TMHWNHM');`,
+          }}
+        />
       </Head>
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMHWNHM" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+        }}
+      />
       <Navbar />
       {children}
       {/* <div className="fixed bottom-2 right-8 lg:bottom-16 lg:right-10">
