@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div className="page">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
       {children}
