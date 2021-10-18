@@ -1,14 +1,15 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: {
-    content: ['./pages/**/*.{js,ts,jsx,tsx}'],
-    safelist: [
-      'relative',
-      'justify-between',
-      'h-16'
-    ]
-  },
+  // purge: {
+  //   content: ['./pages/**/*.{js,ts,jsx,tsx}'],
+  //   safelist: [
+  //     'relative',
+  //     'justify-between',
+  //     'h-16'
+  //   ]
+  // },
+  purge: false,
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
