@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.halimdental.com
+
+# Sitemaps
+Sitemap: https://www.halimdental.com/sitemap.xml
