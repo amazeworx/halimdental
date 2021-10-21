@@ -22,7 +22,7 @@ export default function Home() {
               </div>
               <div className="mb-8">
                 <h2 className="font-bold mb-2">HISTORY</h2>
-                <p>The clinic was started by Dr. Himawan Halim back in the early 1990s and was well known as ‘Himawan Halim Dental Clinic’. The clinic is now co-owned by him and his son, Dr. Ivan A Halim. Dr. Himawan and Dr. Ivan is a second and third generation dentist and are both a US trained dentist/orthodontist. Both doctors will delegate treatment as necessary to the clinic associates which include team of periodontist, endodontist, prosthodontist, dental radiologist, and oral & maxillofacial surgeon. With the addition of Dr. Ivan and added vision and mission for our clinic, the clinic is now known as ‘Halim Dental’.</p>
+                <p>The clinic was started by Dr. Himawan Halim back in the early 1990s and was well known as ‘Himawan Halim Dental Clinic’. The clinic is now co-owned by him and his son, Dr. Ivan A Halim. Dr. Himawan and Dr. Ivan is a second and third generation dentist and are both a US trained dentist/orthodontist. Both doctors will delegate treatment as necessary to the clinic associates which include team of periodontist, endodontist, prosthodontist, dental radiologist, and oral & maxillofacial surgeon. With the addition of Dr. Ivan and added vision and mission for our clinic, the clinic is now known as ‘Halim Dental Clinic’.</p>
               </div>
               <div className="mb-8">
                 <h2 className="font-bold mb-2">CENTRAL BUSINESS DISTRICT LOCATION (CBD)</h2>
