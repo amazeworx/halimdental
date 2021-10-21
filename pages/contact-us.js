@@ -4,13 +4,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Contact Us | Halim Dental</title>
+        <title>Contact Us | Halim Dental Clinic</title>
         <meta name="description" content="To learn more about our clinic and to set up an appointment, we invite you to contact us today!" />
       </Head>
 
       <main className="max-w-7xl mx-auto pt-10 px-4 lg:pt-10 lg:px-8 text-xl">
         <div className="mb-10">
-          <p className="mb-2">Thank you for visiting Halim Dental online. </p>
+          <p className="mb-2">Thank you for visiting Halim Dental Clinic online. </p>
           <p className="mb-2">We are happy to welcome anyone to our office and answer any questions you may have. </p>
           <p className="mb-2">To learn more about our clinic and to set up an appointment, we invite you to contact us today! </p>
         </div>
@@ -20,7 +20,7 @@ export default function Home() {
               <div className="w-full mb-4 lg:mb-0 lg:w-auto"><img className="w-16 lg:w-auto" src="/images/gmap.png" /></div>
               <div className="lg:pl-8">
                 <h2 className="mb-4 text-brand">LOCATION</h2>
-                <h3>HALIM DENTAL</h3>
+                <h3>HALIM DENTAL CLINIC</h3>
                 <p>Jl. Sumenep no. 7<br />Jakarta Pusat 10310 Indonesia</p>
                 <p className="mt-2 text-base"><a className="text-brand hover:underline" target="_blank" href="https://maps.app.goo.gl/ByBvKzB5BzduDGuM7">View in Google Map</a></p>
               </div>
@@ -57,13 +57,13 @@ export default function Home() {
           <div className="w-full md:w-1/2 lg:w-2/5">
             <h2 className="mb-4 text-brand">RECEPTIONIST HOURS</h2>
             <ul>
-              <li><span className="inline-block w-36">Monday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-36">Tuesday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-36">Wednesday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-36">Thursday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-36">Friday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-36">Saturday</span><span className="inline-block">9.00 – 14.00</span></li>
-              <li><span className="inline-block w-36">Sunday</span><span className="inline-block">Closed</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Monday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Tuesday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Wednesday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Thursday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Friday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Saturday</span><span className="inline-block">9.00 – 14.00</span></li>
+              <li><span className="inline-block w-40 text-gray-400 align-top">Sunday &<br />Public Holiday</span><span className="inline-block">Closed</span></li>
             </ul>
           </div>
         </div>

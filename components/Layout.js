@@ -1,6 +1,9 @@
 import Head from 'next/head'
 const { default: Navbar } = require("./Navbar")
 
+import WhatsAppWidget from 'react-whatsapp-widget'
+import 'react-whatsapp-widget/dist/index.css'
+
 const Layout = ({ children }) => {
   return (
     <div className="page">
@@ -23,6 +26,7 @@ const Layout = ({ children }) => {
       />
       <Navbar />
       {children}
+      <WhatsAppWidget phoneNumber='6281299329977' textReplyTime="" message="Hello! 👋🏼 \n\nAda yang bisa kami bantu?" companyName="Halim Dental Clinic" />
       {/* <div className="fixed bottom-2 right-8 lg:bottom-16 lg:right-10">
         <a href="https://wa.me/6281233330476" target="_blank"><img src="/images/whatsapp.png" width="64" height="64" /></a>
       </div> */}

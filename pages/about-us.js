@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>About Us | Halim Dental</title>
-        <meta name="description" content="Halim Dental offer comprehensive dental care that will help transform your appearance and maintain your oral health. We pride ourselves on being a unique full service general and cosmetic dentistry boutique." />
+        <title>About Us | Halim Dental Clinic</title>
+        <meta name="description" content="Halim Dental Clinic offer comprehensive dental care that will help transform your appearance and maintain your oral health. We pride ourselves on being a unique full service general and cosmetic dentistry boutique." />
       </Head>
 
       <main className="max-w-7xl mx-auto lg:pt-6 lg:px-8">
@@ -18,7 +18,7 @@ export default function Home() {
             <div className="px-4 py-4 text-sm text-justify lg:mb-8 lg:px-0 lg:py-0">
               <div className="mb-8">
                 <h2 className="font-bold mb-2">YOUR SMILE IS OUR REWARD</h2>
-                <p>Halim Dental offer comprehensive dental care that will help transform your appearance and maintain your oral health. We pride ourselves on being a unique full service general and cosmetic dentistry boutique. Our team are dedicated to provide the best health care services in dentistry for your family and friends. The office is equipped with innovative technologies and state-of-the-art equipment to provide the best and comfortable dental care for our patient.</p>
+                <p>Halim Dental Clinic offer comprehensive dental care that will help transform your appearance and maintain your oral health. We pride ourselves on being a unique full service general and cosmetic dentistry boutique. Our team are dedicated to provide the best health care services in dentistry for your family and friends. The office is equipped with innovative technologies and state-of-the-art equipment to provide the best and comfortable dental care for our patient.</p>
               </div>
               <div className="mb-8">
                 <h2 className="font-bold mb-2">HISTORY</h2>
@@ -26,7 +26,7 @@ export default function Home() {
               </div>
               <div className="mb-8">
                 <h2 className="font-bold mb-2">CENTRAL BUSINESS DISTRICT LOCATION (CBD)</h2>
-                <p>Halim Dental is located in the heart of Jakarta, just 3 minutes from Bundaran HI, behind Mandarin Oriental Hotel and the German Embassy (Embassy of the Federal Republic of Germany).</p>
+                <p>Halim Dental Clinic is located in the heart of Jakarta, just 3 minutes from Bundaran HI, behind Mandarin Oriental Hotel and the German Embassy (Embassy of the Federal Republic of Germany).</p>
               </div>
             </div>
             <div className="grid grid-cols-3 gap-2 xl:-ml-10">

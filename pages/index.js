@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Halim Dental</title>
-        <meta name="description" content="Halim Dental. International dental experience by your best certified experts." />
+        <title>Halim Dental Clinic - Family and Esthetic Densitry</title>
+        <meta name="description" content="Halim Dental Clinic. International dental experience by your best certified experts. Melayani perawatan gigi komprehensif yang membantu mengubah penampilan dan menjaga kesehatan mulut Anda." />
       </Head>
 
       <main className="max-w-7xl mx-auto px-0">
@@ -18,9 +18,9 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col px-4 mt-4 md:flex-row lg:justify-between lg:px-8 lg:mt-8">
-          <div className="w-full md:w-auto mb-8 lg:mb-0 md:order-last">
+          {/* <div className="w-full md:w-auto mb-8 lg:mb-0 md:order-last">
             <a href="https://wa.me/6281233330476" target="_blank"><img className="mx-auto md:mr-0 md:ml-auto" src="/images/whatsapp-btn.png" /></a>
-          </div>
+          </div> */}
           <div className="w-full md:w-auto md:pr-8 md:order-first">
             <ul className="grid grid-cols-3 md:flex md:flex-wrap gap-4 items-center ">
               <li><img className="mx-auto" src="/images/logos/AAO.png" alt="" /></li>
