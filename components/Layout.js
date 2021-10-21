@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       />
       <Navbar />
       {children}
-      <WhatsAppWidget phoneNumber='6281299329977' textReplyTime="" message="Hello! 👋🏼 \n\nAda yang bisa kami bantu?" companyName="Halim Dental Clinic" />
+      <WhatsAppWidget phoneNumber='6281233330476' textReplyTime="" message="Hello! 👋🏼 \n\nAda yang bisa kami bantu?" companyName="Halim Dental Clinic" />
       {/* <div className="fixed bottom-2 right-8 lg:bottom-16 lg:right-10">
         <a href="https://wa.me/6281233330476" target="_blank"><img src="/images/whatsapp.png" width="64" height="64" /></a>
       </div> */}
