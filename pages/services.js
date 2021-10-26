@@ -19,7 +19,6 @@ export default function Home() {
             <div className="px-4 py-4 mb-8 lg:w-3/4 lg:mb-0 lg:py-0 lg:pl-6 lg:pr-8">
               <h2 className="font-bold mb-8 lg:mt-8">WE OFFER PRIME QUALITY SERVICES & TREATMENTS</h2>
               <ul className="flex gap-3 flex-col">
-                <li>Emergency Dentistry</li>
                 <li>General Dentistry</li>
                 <li>Cosmetic Dentistry (i.e. veneers, teeth whitening) </li>
                 <li>Restorative Dentistry </li>

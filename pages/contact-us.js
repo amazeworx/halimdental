@@ -57,13 +57,13 @@ export default function Home() {
           <div className="w-full md:w-1/2 lg:w-2/5">
             <h2 className="mb-4 text-brand">RECEPTIONIST HOURS</h2>
             <ul>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Monday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Tuesday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Wednesday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Thursday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Friday</span><span className="inline-block">9.00 – 18.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Saturday</span><span className="inline-block">9.00 – 14.00</span></li>
-              <li><span className="inline-block w-40 text-gray-400 align-top">Sunday &<br />Public Holiday</span><span className="inline-block">Closed</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Monday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Tuesday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Wednesday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Thursday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Friday</span><span className="inline-block">9.00 – 18.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Saturday</span><span className="inline-block">9.00 – 14.00</span></li>
+              <li><span className="inline-block pr-4 w-40 xl:w-64 text-gray-400 align-top">Sunday & Public Holiday</span><span className="inline-block">Closed</span></li>
             </ul>
           </div>
         </div>

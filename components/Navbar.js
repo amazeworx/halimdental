@@ -61,7 +61,7 @@ const Navbar = () => {
               <div className="flex-1 flex items-center justify-between">
                 <div className="flex items-center">
                   <Link href="/">
-                    <a className="block mr-4"><img className="h-10 lg:h-14 mr-auto" src="/logo-halimdentalclinic.svg" /></a>
+                    <a className="block mr-4"><img className="h-10 lg:h-14 mr-auto" src="/images/logo-halimdentalclinic.svg" /></a>
                   </Link>
                 </div>
                 <div className="navbar hidden lg:block lg:w-1/2">

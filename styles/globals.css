@@ -37,4 +37,8 @@
     font-size: 2.5em;
     @apply fixed right-4 bottom-4 m-0 lg:right-8 lg:bottom-8;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    @apply text-brand;
+  }
 }

@@ -30,7 +30,7 @@ export default function Home() {
         <div className="flex flex-wrap px-4 lg:px-0">
           <div className="w-full text-sm mb-8 lg:w-1/2 lg:pl-8 lg:pr-12 lg:mb-0">
             <h3 className="font-semibold mb-4 lg:mb-6">EDUCATION</h3>
-            <ul>
+            <ul className="xl:text-justify">
               <li className="mb-2"><span className="inline-block mr-2">Bachelor of Science in Chemistry (BS)</span> <span className="text-brand text-sm font-normal">University of California, Los Angeles, CA, USA</span></li>
               <li className="mb-2"><span className="inline-block mr-2">Doctor of Dental Medicine (DMD)</span> <span className="text-brand text-sm font-normal">Washington University in St. Louis, MO, USA</span></li>
               <li className="mb-2"><span className="inline-block mr-2">Master of Science in Orthodontics (MS)</span> <span className="text-brand text-sm font-normal">Washington University in St. Louis, MO, USA</span></li>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className="w-full text-sm lg:w-1/2 lg:pr-8">
             <h3 className="font-semibold mb-4 lg:mb-6">ACCREDITATIONS</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-4 text-brand">
+            <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-8 text-brand">
               <ul>
                 <li className="mb-1"><span>Member of American Dental Association</span></li>
                 <li className="mb-1"><span>Member of American Association of Orthodontists</span></li>
@@ -47,7 +47,7 @@ export default function Home() {
                 <li className="mb-1"><span>Member of Indonesian Dental Association</span></li>
                 <li className="mb-1"><span>Member of Indonesian Association of Orthodontists</span></li>
               </ul>
-              <ul>
+              <ul className="xl:text-justify">
                 <li className="mb-1"><span>Board Member of World Implant Orthodontic Association</span></li>
                 <li className="mb-1"><span>Past Executive Board Member of Asian Pacific Orthodontic Society</span></li>
                 <li className="mb-1"><span>Fellow of World Federation of Orthodontists (Executive Board Member 2010-2020)</span></li>
