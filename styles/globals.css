@@ -39,6 +39,15 @@
   }
   .swiper-button-next,
   .swiper-button-prev {
-    @apply text-brand;
+    @apply text-brand opacity-60 hover:opacity-100 transition-opacity;
+    &:after {
+      @apply bg-white p-2 rounded text-2xl leading-none lg:text-3xl lg:p-3;
+    }
+  }
+  .swiper-button-next {
+    @apply lg:right-4;
+  }
+  .swiper-button-prev {
+    @apply lg:left-4;
   }
 }

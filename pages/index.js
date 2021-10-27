@@ -28,6 +28,8 @@ export default function Home() {
             <SwiperSlide><img src="/images/slide-01.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
             <SwiperSlide><img src="/images/slide-02.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
             <SwiperSlide><img src="/images/slide-03.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/slide-04.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/slide-05.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
             <SwiperSlide><img src="/images/slide-06.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
           </Swiper>
         </div>
