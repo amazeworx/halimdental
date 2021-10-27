@@ -15,18 +15,36 @@ export default function Home() {
       </Head>
 
       <main className="max-w-7xl mx-auto px-0">
-        <Swiper
-          modules={[Navigation, EffectFade, Autoplay]}
-          navigation
-          autoplay={{ delay: 5000 }}
-          effect="fade"
-          spaceBetween={0}
-          slidesPerView={1}
-          loop
-        >
-          <SwiperSlide><img src="/images/home-hero.jpg" className="h-80 object-cover md:h-96 lg:h-auto" /></SwiperSlide>
-          <SwiperSlide><img src="/images/home-hero-2.jpg" className="h-80 object-cover md:h-96 lg:h-auto" /></SwiperSlide>
-        </Swiper>
+        <div className="md:hidden">
+          <Swiper
+            modules={[Navigation, EffectFade, Autoplay]}
+            navigation
+            autoplay={{ delay: 5000 }}
+            effect="fade"
+            spaceBetween={0}
+            slidesPerView={1}
+            loop
+          >
+            <SwiperSlide><img src="/images/slide-01.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/slide-02.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/slide-03.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/slide-06.jpg" className="w-full h-80 object-cover sm:h-96 lg:h-auto" /></SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="hidden md:block">
+          <Swiper
+            modules={[Navigation, EffectFade, Autoplay]}
+            navigation
+            autoplay={{ delay: 5000 }}
+            effect="fade"
+            spaceBetween={0}
+            slidesPerView={1}
+            loop
+          >
+            <SwiperSlide><img src="/images/home-hero.jpg" className="h-80 object-cover md:h-96 lg:h-auto" /></SwiperSlide>
+            <SwiperSlide><img src="/images/home-hero-2.jpg" className="h-80 object-cover md:h-96 lg:h-auto" /></SwiperSlide>
+          </Swiper>
+        </div>
         <div className="py-4 px-4 lg:px-8">
           <h2 className="text-2xl text-gray-400 text-center md:text-left">International dental experience by your best certified experts.</h2>
         </div>

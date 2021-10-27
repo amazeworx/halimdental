@@ -29,15 +29,17 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-wrap px-4 lg:px-0">
-          <div className="w-full text-sm mb-8 lg:w-1/2 lg:pl-8 lg:pr-12 lg:mb-0">
-            <h3 className="font-semibold mb-4 lg:mb-6">EDUCATION</h3>
-            <ul className="xl:text-justify">
-              <li className="mb-2"><span className="inline-block mr-2">Bachelor of Science in Biochemistry (BS)</span> <span className="text-brand text-sm font-normal">University of California, Los Angeles, CA, USA</span></li>
-              <li className="mb-2"><span className="inline-block mr-2">Doctor of Dental Medicine (DMD)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
-              <li className="mb-2"><span className="inline-block mr-2">Master of Public Health (MPH)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
-              <li className="mb-2"><span className="inline-block mr-2">Master of Science in Orthodontics (MS)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
-              <li className="mb-2"><span className="inline-block mr-2">Certificate in Orthodontics and Dentofacial Orthopedics</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
-            </ul>
+          <div className="w-full text-sm mb-8 lg:w-1/2 lg:pl-8 lg:pr-12 lg:mb-0 lg:flex lg:justify-end">
+            <div>
+              <h3 className="font-semibold mb-4 lg:mb-6">EDUCATION</h3>
+              <ul className="xl:text-justify">
+                <li className="mb-2"><span className="inline-block mr-2">Bachelor of Science in Biochemistry (BS)</span> <span className="text-brand text-sm font-normal">University of California, Los Angeles, CA, USA</span></li>
+                <li className="mb-2"><span className="inline-block mr-2">Doctor of Dental Medicine (DMD)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
+                <li className="mb-2"><span className="inline-block mr-2">Master of Public Health (MPH)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
+                <li className="mb-2"><span className="inline-block mr-2">Master of Science in Orthodontics (MS)</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
+                <li className="mb-2"><span className="inline-block mr-2">Certificate in Orthodontics and Dentofacial Orthopedics</span> <span className="text-brand text-sm font-normal">A.T. Still University, AZ, USA</span></li>
+              </ul>
+            </div>
           </div>
           <div className="w-full text-sm lg:w-1/2 lg:pr-8">
             <h3 className="font-semibold mb-4 lg:mb-6">ACCREDITATIONS</h3>
