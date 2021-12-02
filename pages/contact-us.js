@@ -49,8 +49,11 @@ export default function Home() {
                 <span className="block lg:inline-block"><a href="https://wa.me/6281233330476" target="_blank" className="hover:text-brand hover:underline">+62 812 3333 0476</a></span>
               </li>
               <li className="mb-3 lg:mb-0">
-                <span className="block lg:inline-block lg:w-32 text-gray-400 uppercase text-sm font-bold lg:font-normal lg:normal-case lg:text-xl">Email</span>
-                <span className="block lg:inline-block"><a className="hover:text-brand hover:underline" target="_blank" href="mailto:himawanhalimclinic@yahoo.com">himawanhalimclinic@yahoo.com</a></span>
+                <span className="block align-top lg:inline-block lg:w-32 text-gray-400 uppercase text-sm font-bold lg:font-normal lg:normal-case lg:text-xl">Email</span>
+                <span className="block align-top lg:inline-block">
+                  <a className="hover:text-brand hover:underline" target="_blank" href="mailto:info@halimdental.com">info@halimdental.com</a><br />
+                  <a className="hover:text-brand hover:underline" target="_blank" href="mailto:himawanhalimclinic@yahoo.com">himawanhalimclinic@yahoo.com</a>
+                </span>
               </li>
             </ul>
           </div>
