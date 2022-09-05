@@ -66,7 +66,7 @@ const Navbar = () => {
                   <Link href='/'>
                     <a className='block mr-4'>
                       <img
-                        className='h-10 lg:h-14 lg:h-[4.5rem] mr-auto'
+                        className='h-10 lg:h-16 mr-auto'
                         src='/images/logo-halimdental.svg'
                       />
                     </a>
