@@ -5,13 +5,13 @@
 .navbar {
   .navbar-link {
     &.active {
-      @apply text-brand border-brand border-opacity-30;
+      @apply text-brand border-brand border-opacity-50;
     }
   }
   .submenu {
     @apply hidden absolute bg-white shadow z-20;
     .navbar-link {
-      @apply text-sm whitespace-nowrap px-4 py-2 hover:text-brand;
+      @apply text-sm whitespace-nowrap px-4 py-2 hover:text-white hover:bg-brand transition duration-500;
     }
     li {
       @apply border-b border-gray-200;

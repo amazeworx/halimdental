@@ -1,28 +1,32 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
-import { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline';
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: 'About Us', href: '/about-us', current: false },
+  { name: "Home", href: "/", current: false },
+  { name: "About Us", href: "/about-us", current: false },
+  { name: "Legacy", href: "/legacy", current: false },
   {
-    name: 'Credentials',
-    href: '#',
+    name: "Credentials",
+    href: "#",
     current: false,
     submenu: [
-      { name: 'Himawan Halim', href: '#', current: false },
-      { name: 'Ivan A Halim', href: '#', current: false },
+      { name: "Himawan Halim", href: "#", current: false },
+      { name: "Ivan A Halim", href: "#", current: false },
     ],
   },
-  { name: 'Services', href: '/services', current: false },
-  { name: 'Contact Us', href: '/contact-us', current: false },
+  { name: "Services", href: "/services", current: false },
+  //{ name: 'Case Gallery', href: '/case-gallery', current: false },
+  //{ name: 'Blog', href: '/blog', current: false },
+  { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
@@ -34,77 +38,151 @@ const Navbar = () => {
     setisOpen(!isOpen);
   }
 
-  let serviceMenuSetActive = '';
+  let serviceMenuSetActive = "";
   if (
-    router.pathname == '/about-us' ||
-    router.pathname == '/credentials' ||
-    router.pathname == '/services' ||
-    router.pathname == '/contact-us'
+    router.pathname == "/" ||
+    router.pathname == "/about-us" ||
+    router.pathname == "/legacy" ||
+    router.pathname == "/credentials" ||
+    router.pathname == "/services" ||
+    router.pathname == "/contact-us"
   ) {
-    serviceMenuSetActive = 'active';
+    serviceMenuSetActive = "active";
   }
 
   return (
-    <Disclosure as='nav' className='bg-white'>
+    <Disclosure as="nav" className="bg-white">
       {({ open }) => (
         <>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-8'>
-            <div className='relative flex items-center justify-between h-16'>
-              <div className='absolute inset-y-0 -right-2 flex items-center lg:hidden'>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-8">
+            <div className="relative flex items-center justify-between h-16">
+              <div className="absolute inset-y-0 -right-2 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className='inline-flex items-center justify-center p-2 rounded text-black hover:text-white hover:bg-brand focus:outline-none'>
-                  <span className='sr-only'>Open main menu</span>
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded text-black hover:text-white hover:bg-brand focus:outline-none">
+                  <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className='block h-6 w-6' aria-hidden='true' />
+                    <XIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className='block h-6 w-6' aria-hidden='true' />
+                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
-              <div className='flex-1 flex items-center justify-between'>
-                <div className='flex items-center'>
-                  <Link href='/'>
-                    <a className='block mr-4'>
+              <div className="flex-1 flex items-center justify-between">
+                <div className="flex items-center">
+                  <Link href="/">
+                    <a className="block mr-4">
                       <img
-                        className='h-10 lg:h-16 mr-auto'
-                        src='/images/logo-halimdental.svg'
+                        className="h-10 lg:h-16 mr-auto"
+                        src="/images/logo-halimdental.svg"
                       />
                     </a>
                   </Link>
                 </div>
-                <div className='navbar hidden lg:block lg:w-1/2'>
-                  <ul className='flex justify-between gap-4'>
+                <div className="navbar hidden lg:block">
+                  <ul className="flex justify-between gap-4 lg:gap-x-12">
                     <li>
-                      <Link href='/about-us'>
+                      <Link href="/">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-30 ${
-                            router.pathname == '/about-us' ? 'active' : ''
+                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
+                            router.pathname == "/" ? "active" : ""
+                          }`}
+                        >
+                          Home
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="relative has-submenu">
+                      <a
+                        href="#"
+                        className={`navbar-link inline-block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                          router.pathname ==
+                            "/about-us/your-smile-our-reward" ||
+                          router.pathname == "/about-us/history" ||
+                          router.pathname == "/about-us/why-us"
+                            ? "active"
+                            : ""
+                        }`}
+                      >
+                        About Us
+                      </a>
+                      <ul className="submenu">
+                        <li>
+                          <Link href="/about-us/your-smile-our-reward">
+                            <a
+                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                                router.pathname == "/about-us" ? "active" : ""
+                              }`}
+                            >
+                              Your Smile is Our Reward
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/about-us/history">
+                            <a
+                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                                router.pathname == "/about-us" ? "active" : ""
+                              }`}
+                            >
+                              History
+                            </a>
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/about-us/why-us">
+                            <a
+                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                                router.pathname == "/about-us" ? "active" : ""
+                              }`}
+                            >
+                              Why Us
+                            </a>
+                          </Link>
+                        </li>
+                      </ul>
+                    </li>
+                    {/* <li>
+                      <Link href="/about-us">
+                        <a
+                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
+                            router.pathname == "/about-us" ? "active" : ""
                           }`}
                         >
                           About Us
                         </a>
                       </Link>
+                    </li> */}
+                    <li>
+                      <Link href="/legacy">
+                        <a
+                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
+                            router.pathname == "/legacy" ? "active" : ""
+                          }`}
+                        >
+                          Legacy
+                        </a>
+                      </Link>
                     </li>
-                    <li className='relative has-submenu'>
+                    <li className="relative has-submenu">
                       <a
-                        href='#'
-                        className={`navbar-link inline-block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-30  ${
-                          router.pathname == '/credentials/himawan-halim' ||
-                          router.pathname == '/credentials/ivan-halim'
-                            ? 'active'
-                            : ''
+                        href="#"
+                        className={`navbar-link inline-block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                          router.pathname == "/credentials/himawan-halim" ||
+                          router.pathname == "/credentials/ivan-halim"
+                            ? "active"
+                            : ""
                         }`}
                       >
                         Credentials
                       </a>
-                      <ul className='submenu'>
+                      <ul className="submenu">
                         <li>
-                          <Link href='/credentials/himawan-halim'>
+                          <Link href="/credentials/himawan-halim">
                             <a
                               className={`navbar-link block pt-1 text-lg uppercase  ${
-                                router.pathname == '/credentials'
-                                  ? 'active'
-                                  : ''
+                                router.pathname == "/credentials"
+                                  ? "active"
+                                  : ""
                               }`}
                             >
                               Himawan Halim
@@ -112,12 +190,12 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link href='/credentials/ivan-halim'>
+                          <Link href="/credentials/ivan-halim">
                             <a
                               className={`navbar-link block pt-1 text-lg uppercase  ${
-                                router.pathname == '/credentials'
-                                  ? 'active'
-                                  : ''
+                                router.pathname == "/credentials"
+                                  ? "active"
+                                  : ""
                               }`}
                             >
                               Ivan A Halim
@@ -127,10 +205,10 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link href='/services'>
+                      <Link href="/services">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-30  ${
-                            router.pathname == '/services' ? 'active' : ''
+                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                            router.pathname == "/services" ? "active" : ""
                           }`}
                         >
                           Services
@@ -138,10 +216,10 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link href='/contact-us'>
+                      <Link href="/contact-us">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-30  ${
-                            router.pathname == '/contact-us' ? 'active' : ''
+                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                            router.pathname == "/contact-us" ? "active" : ""
                           }`}
                         >
                           Contact Us
@@ -154,58 +232,106 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className='lg:hidden border-t border-b border-gray-200 py-4'>
-            <div className='px-4 pt-2 pb-2'>
-              <ul className='text-center'>
-                <li className='py-3'>
-                  <Link href='/'>
+          <Disclosure.Panel className="lg:hidden border-t border-b border-gray-200 py-4">
+            <div className="px-4 pt-2 pb-2">
+              <ul className="text-center">
+                <li className="py-3">
+                  <Link href="/">
                     <a
                       className={`navbar-link block text-lg uppercase hover:text-brand ${
-                        router.pathname == '/' ? 'active' : ''
+                        router.pathname == "/" ? "active" : ""
                       }`}
                     >
                       Home
                     </a>
                   </Link>
                 </li>
-                <li className='py-3'>
-                  <Link href='/about-us'>
+                <li className="relative has-submenu py-3">
+                  <span
+                    className={`navbar-link inline-block text-lg uppercase`}
+                  >
+                    About Us
+                  </span>
+                  <ul className="submenu pt-1">
+                    <li className="py-1">
+                      <Link href="/about-us/your-smile-our-reward">
+                        <a
+                          className={`navbar-link block text-base uppercase hover:text-brand ${
+                            router.pathname == "/about-us/your-smile-our-reward"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          Your Smile is Our Reward
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="py-1">
+                      <Link href="/about-us/history">
+                        <a
+                          className={`navbar-link block text-base uppercase hover:text-brand ${
+                            router.pathname == "/about-us/history"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          History
+                        </a>
+                      </Link>
+                    </li>
+                    <li className="py-1">
+                      <Link href="/about-us/why-us">
+                        <a
+                          className={`navbar-link block text-base uppercase hover:text-brand ${
+                            router.pathname == "/about-us/why-us"
+                              ? "active"
+                              : ""
+                          }`}
+                        >
+                          Why Us
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li className="py-3">
+                  <Link href="/legacy">
                     <a
                       className={`navbar-link block text-lg uppercase hover:text-brand ${
-                        router.pathname == '/about-us' ? 'active' : ''
+                        router.pathname == "/legacy" ? "active" : ""
                       }`}
                     >
-                      About Us
+                      Legacy
                     </a>
                   </Link>
                 </li>
-                <li className='relative has-submenu py-3'>
+                <li className="relative has-submenu py-3">
                   <span
                     className={`navbar-link inline-block text-lg uppercase`}
                   >
                     Credentials
                   </span>
-                  <ul className='submenu pt-1'>
-                    <li className='py-1'>
-                      <Link href='/credentials/himawan-halim'>
+                  <ul className="submenu pt-1">
+                    <li className="py-1">
+                      <Link href="/credentials/himawan-halim">
                         <a
                           className={`navbar-link block text-base uppercase hover:text-brand ${
-                            router.pathname == '/credentials/himawan-halim'
-                              ? 'active'
-                              : ''
+                            router.pathname == "/credentials/himawan-halim"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Himawan Halim
                         </a>
                       </Link>
                     </li>
-                    <li className='py-1'>
-                      <Link href='/credentials/ivan-halim'>
+                    <li className="py-1">
+                      <Link href="/credentials/ivan-halim">
                         <a
                           className={`navbar-link block text-base uppercase hover:text-brand ${
-                            router.pathname == '/credentials/ivan-halim'
-                              ? 'active'
-                              : ''
+                            router.pathname == "/credentials/ivan-halim"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Ivan A Halim
@@ -214,22 +340,22 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className='py-3'>
-                  <Link href='/services'>
+                <li className="py-3">
+                  <Link href="/services">
                     <a
                       className={`navbar-link block text-lg uppercase hover:text-brand ${
-                        router.pathname == '/services' ? 'active' : ''
+                        router.pathname == "/services" ? "active" : ""
                       }`}
                     >
                       Services
                     </a>
                   </Link>
                 </li>
-                <li className='py-3'>
-                  <Link href='/contact-us'>
+                <li className="py-3">
+                  <Link href="/contact-us">
                     <a
                       className={`navbar-link block text-lg uppercase hover:text-brand ${
-                        router.pathname == '/contact-us' ? 'active' : ''
+                        router.pathname == "/contact-us" ? "active" : ""
                       }`}
                     >
                       Contact Us
