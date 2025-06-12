@@ -183,8 +183,11 @@ export default function Home() {
                   </span>
                 </li>
                 <li className="mb-1">
+                  <span>Member of Indonesian Dental Association</span>
+                </li>
+                <li className="mb-1">
                   <span>
-                    Member and Advisory Board of Indonesian Association of
+                    Member and Committee of Indonesian Association of
                     Orthodontists
                   </span>
                 </li>

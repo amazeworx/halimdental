@@ -30,38 +30,38 @@ export default function Home() {
           >
             <SwiperSlide>
               <img
-                src="/images/slide-01.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-01.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/slide-02.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-02.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/slide-03.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-03.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/slide-04.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-04.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/slide-05.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-05.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
             <SwiperSlide>
               <img
-                src="/images/slide-06.jpg"
-                className="w-full h-80 object-cover sm:h-96 lg:h-auto"
+                src="/images/mobile-slide-06.jpg"
+                className="w-full h-96 object-cover sm:h-96 lg:h-auto"
               />
             </SwiperSlide>
           </Swiper>
@@ -102,7 +102,7 @@ export default function Home() {
           </div> */}
           <div className="w-full md:w-auto md:pr-12 lg:pr-32 md:order-first">
             <ul className="grid grid-cols-3 md:flex md:flex-wrap lg:flex-nowrap gap-4 xl:gap-8 items-center ">
-              <li className="col-span-3 md:col-auto">
+              <li className="col-span-2 md:col-auto">
                 <img
                   className="mx-auto w-auto h-10 xl:h-16 object-contain"
                   src="/images/logos/logo-wfo.png"
