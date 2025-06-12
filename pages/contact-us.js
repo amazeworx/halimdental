@@ -26,29 +26,52 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-wrap mb-12">
-          <div className="w-full mb-12 lg:mb-0 md:w-1/2 lg:w-3/5 lg:pr-8">
-            <div className="flex flex-wrap">
+          <div className="w-full mb-12 lg:mb-0 md:w-1/2 lg:w-3/5 lg:pr-12">
+            <div className="flex flex-wrap lg:flex-nowrap">
               <div className="w-full mb-4 lg:mb-0 lg:w-auto">
                 <img className="w-16 lg:w-auto" src="/images/gmap.png" />
               </div>
               <div className="lg:pl-8">
                 <h2 className="mb-4 text-brand font-bold">LOCATION</h2>
-                <h3>MAIN OFFICE</h3>
-                <p>
-                  Jl. Sumenep no. 7<br />
-                  Jakarta Pusat 10310
-                  <br />
-                  Indonesia
-                </p>
-                <p className="mt-2 text-base">
-                  <a
-                    className="text-brand hover:underline"
-                    target="_blank"
-                    href="https://maps.app.goo.gl/ByBvKzB5BzduDGuM7"
-                  >
-                    View in Google Map
-                  </a>
-                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="mb-2">MAIN OFFICE</h3>
+                    <p>
+                      Jl. Sumenep no. 7<br />
+                      Jakarta Pusat 10310
+                      <br />
+                      Indonesia
+                    </p>
+                    <p className="mt-2 text-base">
+                      <a
+                        className="text-brand hover:underline"
+                        target="_blank"
+                        href="https://maps.app.goo.gl/ByBvKzB5BzduDGuM7"
+                      >
+                        View in Google Map
+                      </a>
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="mb-2">SATELLITE CLINIC</h3>
+                    <p>
+                      Jl. Duta Indah I no. 14
+                      <br />
+                      Jakarta Selatan 12310
+                      <br />
+                      Indonesia
+                    </p>
+                    <p className="mt-2 text-base">
+                      <a
+                        className="text-brand hover:underline"
+                        target="_blank"
+                        href="https://g.co/kgs/Pu7AjtE"
+                      >
+                        View in Google Map
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -88,11 +111,11 @@ export default function Home() {
                 </span>
                 <span className="block lg:inline-block">
                   <a
-                    href="https://wa.me/6281233330476"
+                    href="https://wa.me/6281112203550"
                     target="_blank"
                     className="hover:text-brand hover:underline"
                   >
-                    +62 812 3333 0476
+                    +62 811 1220 3550
                   </a>
                 </span>
               </li>
