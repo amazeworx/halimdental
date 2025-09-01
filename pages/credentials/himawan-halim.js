@@ -86,6 +86,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Bachelor of Science in Chemistry (BS)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     University of California, Los Angeles, CA, USA
                   </span>
@@ -94,6 +95,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Doctor of Dental Medicine (DMD)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     Washington University in St. Louis, MO, USA
                   </span>
@@ -102,6 +104,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Master of Science in Orthodontics (MS)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     Washington University in St. Louis, MO, USA
                   </span>
@@ -110,6 +113,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Foreign Degree Equilibration
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     University of Indonesia, Jakarta, Indonesia
                   </span>
@@ -118,6 +122,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Doctor of Philosophy (PhD)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     University of Indonesia, Jakarta, Indonesia
                   </span>
