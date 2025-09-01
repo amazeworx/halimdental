@@ -88,14 +88,15 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-wrap px-4 lg:px-0 mb-8 lg:mt-4">
-          <div className="w-full text-sm mb-8 lg:w-1/2 lg:pl-8 lg:pr-12 lg:mb-0 lg:flex lg:justify-end">
+          <div className="w-full text-sm mb-8 lg:w-1/2 lg:pl-0 lg:pr-12 lg:mb-0 lg:flex lg:justify-end">
             <div>
               <h3 className="font-semibold mb-4 lg:mb-6">EDUCATION</h3>
               <ul className="xl:text-justify list-disc pl-4">
                 <li className="mb-2">
                   <span className="inline-block mr-2">
                     Bachelor of Science in Biochemistry (BS)
-                  </span>{" "}
+                  </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     University of California, Los Angeles, CA, USA
                   </span>
@@ -103,7 +104,8 @@ export default function Home() {
                 <li className="mb-2">
                   <span className="inline-block mr-2">
                     Doctor of Dental Medicine (DMD)
-                  </span>{" "}
+                  </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     A.T. Still University, AZ, USA
                   </span>
@@ -111,7 +113,8 @@ export default function Home() {
                 <li className="mb-2">
                   <span className="inline-block mr-2">
                     Master of Public Health (MPH)
-                  </span>{" "}
+                  </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     A.T. Still University, AZ, USA
                   </span>
@@ -119,7 +122,8 @@ export default function Home() {
                 <li className="mb-2">
                   <span className="inline-block mr-2">
                     Master of Science in Orthodontics (MS)
-                  </span>{" "}
+                  </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     A.T. Still University, AZ, USA
                   </span>
@@ -127,7 +131,8 @@ export default function Home() {
                 <li className="mb-2">
                   <span className="inline-block mr-2">
                     Certificate in Orthodontics and Dentofacial Orthopedics
-                  </span>{" "}
+                  </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     A.T. Still University, AZ, USA
                   </span>
@@ -136,6 +141,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Foreign Degree Equilibration (DMD, MS)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     University of Indonesia, Jakarta, Indonesia
                   </span>
@@ -144,6 +150,7 @@ export default function Home() {
                   <span className="inline-block mr-2">
                     Doctor of Philosophy (PhD)
                   </span>
+                  &ndash;&nbsp;
                   <span className="text-brand text-sm font-normal">
                     Padjadjaran University, Bandung, Indonesia
                   </span>

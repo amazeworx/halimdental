@@ -111,12 +111,28 @@ export default function Home() {
                 </span>
                 <span className="block lg:inline-block">
                   <a
+                    href="https://wa.me/6281233330476"
+                    target="_blank"
+                    className="hover:text-brand hover:underline"
+                  >
+                    +62 812 3333 0476
+                  </a>
+                  &nbsp;(Main Office)
+                </span>
+              </li>              
+              <li className="mb-3 lg:mb-0">
+                <span className="block lg:inline-block lg:w-32 text-gray-400 uppercase text-sm font-bold lg:font-normal lg:normal-case lg:text-xl">
+                  
+                </span>
+                <span className="block lg:inline-block">
+                  <a
                     href="https://wa.me/6281112203550"
                     target="_blank"
                     className="hover:text-brand hover:underline"
                   >
                     +62 811 1220 3550
                   </a>
+                  &nbsp;(Satellite Clinic)
                 </span>
               </li>
               <li className="mb-3 lg:mb-0">

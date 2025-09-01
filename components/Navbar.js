@@ -20,8 +20,8 @@ const navigation = [
     ],
   },
   { name: "Services", href: "/services", current: false },
-  //{ name: 'Case Gallery', href: '/case-gallery', current: false },
-  //{ name: 'Blog', href: '/blog', current: false },
+  { name: 'Case Gallery', href: '/case-gallery', current: false },
+  { name: 'Blog', href: '/blog', current: false },
   { name: "Contact Us", href: "/contact-us", current: false },
 ];
 
@@ -55,7 +55,7 @@ const Navbar = () => {
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:py-8">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center lg:justify-between h-16 lg:h-auto xl:h-16">
               <div className="absolute inset-y-0 -right-2 flex items-center lg:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded text-black hover:text-white hover:bg-brand focus:outline-none">
@@ -67,23 +67,23 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-between">
-                <div className="flex items-center">
+              <div className="flex-1 flex flex-col xl:flex-row lg:items-center justify-between">
+                <div className="flex items-center lg:mb-6 xl:mb-0">
                   <Link href="/">
                     <a className="block mr-4">
                       <img
-                        className="h-10 lg:h-16 mr-auto"
+                        className="h-10 lg:h-14 mr-auto"
                         src="/images/logo-halimdental.svg"
                       />
                     </a>
                   </Link>
                 </div>
                 <div className="navbar hidden lg:block">
-                  <ul className="flex justify-between gap-4 lg:gap-x-12">
+                  <ul className="flex justify-between gap-4 lg:gap-x-8 text-sm">
                     <li>
                       <Link href="/">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
                             router.pathname == "/" ? "active" : ""
                           }`}
                         >
@@ -94,7 +94,7 @@ const Navbar = () => {
                     <li className="relative has-submenu">
                       <a
                         href="#"
-                        className={`navbar-link inline-block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                        className={`navbar-link inline-block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
                           router.pathname ==
                             "/about-us/your-smile-our-reward" ||
                           router.pathname == "/about-us/history" ||
@@ -109,7 +109,7 @@ const Navbar = () => {
                         <li>
                           <Link href="/about-us/your-smile-our-reward">
                             <a
-                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                              className={`navbar-link block pt-1 text-base uppercase  ${
                                 router.pathname == "/about-us" ? "active" : ""
                               }`}
                             >
@@ -120,7 +120,7 @@ const Navbar = () => {
                         <li>
                           <Link href="/about-us/history">
                             <a
-                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                              className={`navbar-link block pt-1 text-base uppercase  ${
                                 router.pathname == "/about-us" ? "active" : ""
                               }`}
                             >
@@ -131,7 +131,7 @@ const Navbar = () => {
                         <li>
                           <Link href="/about-us/why-us">
                             <a
-                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                              className={`navbar-link block pt-1 text-base uppercase  ${
                                 router.pathname == "/about-us" ? "active" : ""
                               }`}
                             >
@@ -141,21 +141,10 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </li>
-                    {/* <li>
-                      <Link href="/about-us">
-                        <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
-                            router.pathname == "/about-us" ? "active" : ""
-                          }`}
-                        >
-                          About Us
-                        </a>
-                      </Link>
-                    </li> */}
                     <li>
                       <Link href="/legacy">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50 ${
                             router.pathname == "/legacy" ? "active" : ""
                           }`}
                         >
@@ -166,7 +155,7 @@ const Navbar = () => {
                     <li className="relative has-submenu">
                       <a
                         href="#"
-                        className={`navbar-link inline-block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                        className={`navbar-link inline-block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
                           router.pathname == "/credentials/himawan-halim" ||
                           router.pathname == "/credentials/ivan-halim"
                             ? "active"
@@ -179,7 +168,7 @@ const Navbar = () => {
                         <li>
                           <Link href="/credentials/himawan-halim">
                             <a
-                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                              className={`navbar-link block pt-1 text-base uppercase  ${
                                 router.pathname == "/credentials"
                                   ? "active"
                                   : ""
@@ -192,7 +181,7 @@ const Navbar = () => {
                         <li>
                           <Link href="/credentials/ivan-halim">
                             <a
-                              className={`navbar-link block pt-1 text-lg uppercase  ${
+                              className={`navbar-link block pt-1 text-base uppercase  ${
                                 router.pathname == "/credentials"
                                   ? "active"
                                   : ""
@@ -207,7 +196,7 @@ const Navbar = () => {
                     <li>
                       <Link href="/services">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
                             router.pathname == "/services" ? "active" : ""
                           }`}
                         >
@@ -216,9 +205,31 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li>
+                      <Link href="/case-gallery">
+                        <a
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                            router.pathname == "/case-gallery" ? "active" : ""
+                          }`}
+                        >
+                          Case Gallery
+                        </a>
+                      </Link>
+                    </li> 
+                    <li>
+                      <Link href="/blog">
+                        <a
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                            router.pathname == "/blog" ? "active" : ""
+                          }`}
+                        >
+                          Blog
+                        </a>
+                      </Link>
+                    </li>                                        
+                    <li>
                       <Link href="/contact-us">
                         <a
-                          className={`navbar-link block pt-1 pb-2 text-lg uppercase border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
+                          className={`navbar-link block pt-1 pb-2 text-base uppercase whitespace-nowrap border-t border-gray-300 hover:text-brand hover:border-brand hover:border-opacity-50  ${
                             router.pathname == "/contact-us" ? "active" : ""
                           }`}
                         >
@@ -238,7 +249,7 @@ const Navbar = () => {
                 <li className="py-3">
                   <Link href="/">
                     <a
-                      className={`navbar-link block text-lg uppercase hover:text-brand ${
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
                         router.pathname == "/" ? "active" : ""
                       }`}
                     >
@@ -248,7 +259,7 @@ const Navbar = () => {
                 </li>
                 <li className="relative has-submenu py-3">
                   <span
-                    className={`navbar-link inline-block text-lg uppercase`}
+                    className={`navbar-link inline-block text-base uppercase`}
                   >
                     About Us
                   </span>
@@ -297,7 +308,7 @@ const Navbar = () => {
                 <li className="py-3">
                   <Link href="/legacy">
                     <a
-                      className={`navbar-link block text-lg uppercase hover:text-brand ${
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
                         router.pathname == "/legacy" ? "active" : ""
                       }`}
                     >
@@ -307,7 +318,7 @@ const Navbar = () => {
                 </li>
                 <li className="relative has-submenu py-3">
                   <span
-                    className={`navbar-link inline-block text-lg uppercase`}
+                    className={`navbar-link inline-block text-base uppercase`}
                   >
                     Credentials
                   </span>
@@ -343,7 +354,7 @@ const Navbar = () => {
                 <li className="py-3">
                   <Link href="/services">
                     <a
-                      className={`navbar-link block text-lg uppercase hover:text-brand ${
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
                         router.pathname == "/services" ? "active" : ""
                       }`}
                     >
@@ -352,9 +363,31 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="py-3">
+                  <Link href="/case-gallery">
+                    <a
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
+                        router.pathname == "/case-gallery" ? "active" : ""
+                      }`}
+                    >
+                      Case Gallery
+                    </a>
+                  </Link>
+                </li>
+                <li className="py-3">
+                  <Link href="/blog">
+                    <a
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
+                        router.pathname == "/blog" ? "active" : ""
+                      }`}
+                    >
+                      Blog
+                    </a>
+                  </Link>
+                </li>                                
+                <li className="py-3">
                   <Link href="/contact-us">
                     <a
-                      className={`navbar-link block text-lg uppercase hover:text-brand ${
+                      className={`navbar-link block text-base uppercase hover:text-brand ${
                         router.pathname == "/contact-us" ? "active" : ""
                       }`}
                     >
